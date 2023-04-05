@@ -15,15 +15,11 @@
             android:name=".Referencias"
             android:exported="false" />
         <activity
-            android:name=".Metal"
+            android:name=".EtapaQuatro"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Vidro"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Quiz"
+            android:name=".EtapaTres"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -31,19 +27,19 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Plastico"
+            android:name=".EtapaDois"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Papel"
+            android:name=".EtapaUm"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TiposMateriaisReciclaveis"
+            android:name=".EtapasProjetoREGER"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MateriaisReciclaveis"
+            android:name=".SobreProjetoReger"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

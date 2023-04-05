@@ -9,30 +9,30 @@ import android.widget.Button;
 
 public class RecyclePlus extends AppCompatActivity {
 
-    private Button btnMateriaisReciclaveis, btnQuiz, btnCreditos;
+    private Button btnSobreREGER, btnEtapasProjetoREGER, btnCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycleplus);
 
-        btnMateriaisReciclaveis = findViewById(R.id.btnMateriaisReciclaveis);
-        btnQuiz = findViewById(R.id.btnQuiz);
+        btnSobreREGER = findViewById(R.id.btnSobreREGER);
+        btnEtapasProjetoREGER = findViewById(R.id.btnEtapasProjetoREGER);
         btnCreditos = findViewById(R.id.btnCreditos);
 
-        btnMateriaisReciclaveis.setOnClickListener(new View.OnClickListener() {
+        btnSobreREGER.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaMateriaisReciclaveis = new Intent(RecyclePlus.this, MateriaisReciclaveis.class);
-                startActivity(telaMateriaisReciclaveis);
+                Intent telaSobreREGER = new Intent(RecyclePlus.this, SobreProjetoReger.class);
+                startActivity(telaSobreREGER);
             }
         });
 
-        btnQuiz.setOnClickListener(new View.OnClickListener() {
+        btnEtapasProjetoREGER.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaQuiz = new Intent(RecyclePlus.this, Quiz.class);
-                startActivity(telaQuiz);
+                Intent telaEtapasProjetoREGER = new Intent(RecyclePlus.this, EtapasProjetoREGER.class);
+                startActivity(telaEtapasProjetoREGER);
             }
         });
         

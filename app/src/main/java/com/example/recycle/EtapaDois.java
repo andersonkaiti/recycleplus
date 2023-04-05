@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Vidro extends AppCompatActivity {
+public class EtapaDois extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vidro);
+        setContentView(R.layout.activity_etapa_dois);
+
     }
 }

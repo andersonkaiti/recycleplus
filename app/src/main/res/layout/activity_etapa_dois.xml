@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    tools:context=".Plastico">
+    tools:context=".EtapaDois">
 
     <TextView
         android:id="@+id/textView3"
@@ -15,6 +15,7 @@
         android:text="TEXTO"
         android:textColor="@color/white"
         android:textSize="24sp"
+        android:textStyle="bold"
         android:justificationMode="inter_word"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

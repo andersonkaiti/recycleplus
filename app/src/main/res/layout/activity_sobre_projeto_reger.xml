@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    tools:context=".MateriaisReciclaveis">
+    tools:context=".SobreProjetoReger">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +22,7 @@
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -31,28 +31,28 @@
         android:background="@drawable/shape_container"
         android:orientation="vertical"
         android:paddingHorizontal="15dp"
-        android:paddingVertical="0dp"
+        android:paddingVertical="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2">
 
-        <Button
-            android:id="@+id/btnTiposMateriaisReciclaveis"
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_shape"
-            android:text="Tipos de Materiaris Recicláveis"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Bem-vindo, vamos apresentar uma solução para um problema que afeta muitas universidades ao redor do mundo: o descarte excessivo de lixo. Com o aumento da conscientização ambiental, é fundamental que as instituições de ensino também adotem práticas sustentáveis. Nosso aplicativo foi desenvolvido para facilitar a gestão e a redução do lixo gerado dentro do campus universitário, promovendo a reciclagem e o descarte adequado dos resíduos."
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:justificationMode="inter_word" />
 
         <Button
-            android:id="@+id/btnSeparacaoMateriaisReciclaveis"
+            android:id="@+id/btnEtapasProjetoREGER"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/button_shape"
-            android:text="Separacão de Materiais Reciclaveis"
+            android:text="Etapas do Projeto REGER"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

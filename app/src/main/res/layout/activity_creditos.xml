@@ -9,24 +9,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@drawable/shape_container"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_container_white"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/integrantes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
             android:background="@drawable/shape_container_blue"
             android:text="INTEGRANTES DO GRUPO"
-            android:textColor="@color/white"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -79,12 +80,12 @@
             android:id="@+id/orientador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
             android:background="@drawable/shape_container_blue"
             android:text="DOCENTE ORIENTADOR"
-            android:textColor="@color/white"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -102,12 +103,12 @@
             android:id="@+id/colaboradora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
             android:background="@drawable/shape_container_blue"
             android:text="COLABORADORA"
-            android:textColor="@color/white"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -115,11 +116,11 @@
             android:id="@+id/beatriz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="15dp"
             android:text="Prof.ª Dr.ª Beatriz Antoniassi Tavares"
-            android:textColor="@color/dark_blue"
             android:textAlignment="center"
+            android:textColor="@color/dark_blue"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -132,7 +133,6 @@
             android:background="@drawable/button_shape"
             android:text="Referências"
             android:textColor="@color/white"
-            android:color="@color/dark_blue"
             android:textSize="24sp"
             android:textStyle="bold" />
 
