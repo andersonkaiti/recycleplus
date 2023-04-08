@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Bem-vindo, vamos apresentar uma solução para um problema que afeta muitas universidades ao redor do mundo: o descarte excessivo de lixo. Com o aumento da conscientização ambiental, é fundamental que as instituições de ensino também adotem práticas sustentáveis. Nosso aplicativo foi desenvolvido para facilitar a gestão e a redução do lixo gerado dentro do campus universitário, promovendo a reciclagem e o descarte adequado dos resíduos."
+            android:text="Bem-vindo! Vamos apresentar uma solução para um problema que afeta muitas IES ao redor do mundo: o descarte excessivo de lixo. Com o aumento da conscientização ambiental, é fundamental que as IEs também adotem práticas sustentáveis. Por isso, o aplicativo foi desenvolvido para elucidar, clarificar e organizar as informações em poucas telas a fim de promover a redução do lixo gerado dentro do campus universitário e o descarte adequado dos resíduos."
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
             android:textStyle="bold"

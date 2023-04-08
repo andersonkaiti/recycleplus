@@ -43,7 +43,7 @@
             android:layout_marginHorizontal="0dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_shape"
-            android:text="Etapa Um"
+            android:text="Recicláveis"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -55,34 +55,11 @@
             android:layout_marginHorizontal="0dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_shape"
-            android:text="Etapa Dois"
+            android:text="Rejeitos"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnEtapaTres"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_shape"
-            android:text="Etapa Três"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnEtapaQuatro"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_shape"
-            android:text="Etapa Quatro"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
