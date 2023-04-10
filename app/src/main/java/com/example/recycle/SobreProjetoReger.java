@@ -9,20 +9,20 @@ import android.widget.Button;
 
 public class SobreProjetoReger extends AppCompatActivity {
 
-    private Button btnEtapasProjetoREGER;
+    private Button btnTiposLixos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sobre_projeto_reger);
 
-        btnEtapasProjetoREGER = findViewById(R.id.btnEtapasProjetoREGER);
+        btnTiposLixos = findViewById(R.id.btnTiposLixos);
 
-        btnEtapasProjetoREGER.setOnClickListener(new View.OnClickListener() {
+        btnTiposLixos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaEtapasProjetoREGER = new Intent(SobreProjetoReger.this, EtapasProjetoREGER.class);
-                startActivity(telaEtapasProjetoREGER);
+                Intent telaTiposdeLixos = new Intent(SobreProjetoReger.this, TiposLixos.class);
+                startActivity(telaTiposdeLixos);
             }
         });
     }

@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EtapaUm extends AppCompatActivity {
+public class Comum extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_etapa_um);
+        setContentView(R.layout.activity_comum_rejeito);
+
     }
 }

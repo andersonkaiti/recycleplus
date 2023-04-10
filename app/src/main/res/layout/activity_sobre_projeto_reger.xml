@@ -40,19 +40,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Bem-vindo! Vamos apresentar uma solução para um problema que afeta muitas IES ao redor do mundo: o descarte excessivo de lixo. Com o aumento da conscientização ambiental, é fundamental que as IEs também adotem práticas sustentáveis. Por isso, o aplicativo foi desenvolvido para elucidar, clarificar e organizar as informações em poucas telas a fim de promover a redução do lixo gerado dentro do campus universitário e o descarte adequado dos resíduos."
+            android:text="Olá, seja bem-vindo! O projeto REGER - Redução da Geração de Resíduos surgiu como uma solução para um problema que afeta muitas IESs ao redor do mundo: o descarte excessivo de lixo. Com o intuito de promover a redução do lixo gerado dentro do campus universitário e o descarte adequado dos resíduos, este aplicativo foi desenvolvido a fim de esclarecer e organizar as informações do projeto de forma simples e concisa."
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
             android:textStyle="bold"
             android:justificationMode="inter_word" />
 
         <Button
-            android:id="@+id/btnEtapasProjetoREGER"
+            android:id="@+id/btnTiposLixos"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/button_shape"
-            android:text="Etapas do Projeto REGER"
+            android:text="Tipos de lixos"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

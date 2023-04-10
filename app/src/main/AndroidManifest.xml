@@ -15,11 +15,7 @@
             android:name=".Referencias"
             android:exported="false" />
         <activity
-            android:name=".EtapaQuatro"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".EtapaTres"
+            android:name=".Organico"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -27,15 +23,15 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EtapaDois"
+            android:name=".Comum"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EtapaUm"
+            android:name=".Reciclavel"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EtapasProjetoREGER"
+            android:name=".TiposLixos"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

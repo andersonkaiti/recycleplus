@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class RecyclePlus extends AppCompatActivity {
 
-    private Button btnSobreREGER, btnEtapasProjetoREGER, btnCreditos;
+    private Button btnSobreREGER, btnTiposLixos, btnCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class RecyclePlus extends AppCompatActivity {
         setContentView(R.layout.activity_recycleplus);
 
         btnSobreREGER = findViewById(R.id.btnSobreREGER);
-        btnEtapasProjetoREGER = findViewById(R.id.btnEtapasProjetoREGER);
+        btnTiposLixos = findViewById(R.id.btnTiposLixos);
         btnCreditos = findViewById(R.id.btnCreditos);
 
         btnSobreREGER.setOnClickListener(new View.OnClickListener() {
@@ -28,11 +28,11 @@ public class RecyclePlus extends AppCompatActivity {
             }
         });
 
-        btnEtapasProjetoREGER.setOnClickListener(new View.OnClickListener() {
+        btnTiposLixos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaEtapasProjetoREGER = new Intent(RecyclePlus.this, EtapasProjetoREGER.class);
-                startActivity(telaEtapasProjetoREGER);
+                Intent telaTiposdeLixos = new Intent(RecyclePlus.this, TiposLixos.class);
+                startActivity(telaTiposdeLixos);
             }
         });
         
