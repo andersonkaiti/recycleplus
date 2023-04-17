@@ -1,9 +1,11 @@
 package com.example.recycle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -43,5 +45,13 @@ public class RecyclePlus extends AppCompatActivity {
                 startActivity(telaCreditos);
             }
         });
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==android.R.id.home) {
+            finish();
+        }
+        return super.onContextItemSelected(item);
     }
 }

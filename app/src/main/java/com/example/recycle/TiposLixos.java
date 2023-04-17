@@ -1,11 +1,14 @@
 package com.example.recycle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import androidx.appcompat.widget.Toolbar;
 public class TiposLixos extends AppCompatActivity {
 
     private Button btnReciclaveis, btnComumRejeitos, btnOrganico;
@@ -15,10 +18,14 @@ public class TiposLixos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipos_de_lixos);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         btnReciclaveis = findViewById(R.id.btnReciclaveis);
         btnComumRejeitos = findViewById(R.id.btnComumRejeitos);
         btnOrganico = findViewById(R.id.btnOrganico);
-
 
         btnReciclaveis.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,5 +50,13 @@ public class TiposLixos extends AppCompatActivity {
                 startActivity(telaOrganico);
             }
         });
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==android.R.id.home) {
+            finish();
+        }
+        return super.onContextItemSelected(item);
     }
 }
