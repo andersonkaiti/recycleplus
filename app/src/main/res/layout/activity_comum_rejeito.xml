@@ -51,7 +51,7 @@
         <TextView
             android:id="@+id/Reciclavel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:justificationMode="inter_word"
             android:paddingHorizontal="20dp"
             android:text="Produtos Colantes\nPapel Higiênico\nEmbalagens com Resíduos\nGuardanapos Usados\nFotografia\nCelofane\nAlimentos Temperados\n\nAcrílico\nCabo de panela\nEsponja de Aço\nEspelho e Ampolas\nLouças\nVidros Temperados\nMadeiras Envernizadas"
