@@ -9,9 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+
 public class TiposLixos extends AppCompatActivity {
 
-    private Button btnReciclaveis, btnComumRejeitos, btnOrganico;
+    private CardView cardReciclaveis, cardComum, cardOrganico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +25,11 @@ public class TiposLixos extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        btnReciclaveis = findViewById(R.id.btnReciclaveis);
-        btnComumRejeitos = findViewById(R.id.btnComumRejeitos);
-        btnOrganico = findViewById(R.id.btnOrganico);
+        cardReciclaveis = findViewById(R.id.cardReciclaveis);
+        cardComum = findViewById(R.id.cardComum);
+        cardOrganico = findViewById(R.id.cardOrganico);
 
-        btnReciclaveis.setOnClickListener(new View.OnClickListener() {
+        cardReciclaveis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaReciclaveis = new Intent(TiposLixos.this, Reciclavel.class);
@@ -35,7 +37,7 @@ public class TiposLixos extends AppCompatActivity {
             }
         });
 
-        btnComumRejeitos.setOnClickListener(new View.OnClickListener() {
+        cardComum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaComumRejeitos = new Intent(TiposLixos.this, Comum.class);
@@ -43,7 +45,7 @@ public class TiposLixos extends AppCompatActivity {
             }
         });
 
-        btnOrganico.setOnClickListener(new View.OnClickListener() {
+        cardOrganico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaOrganico = new Intent(TiposLixos.this, Organico.class);

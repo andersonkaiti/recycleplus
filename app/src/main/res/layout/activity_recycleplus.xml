@@ -8,7 +8,7 @@
     tools:context=".RecyclePlus">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageImagem3"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:elevation="4dp"
@@ -23,7 +23,7 @@
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -32,7 +32,7 @@
         android:background="@drawable/shape_container"
         android:orientation="vertical"
         android:paddingHorizontal="15dp"
-        android:paddingTop="75dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="1.0"
@@ -42,6 +42,7 @@
             android:id="@+id/btnSobreREGER"
             android:layout_width="match_parent"
             android:layout_height="75dp"
+            android:layout_marginVertical="10dp"
             android:background="@drawable/button_shape"
             android:text="Sobre o Projeto REGER"
             android:textColor="@color/white"
@@ -53,7 +54,7 @@
             android:id="@+id/btnTiposLixos"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginVertical="10dp"
             android:background="@drawable/button_shape"
             android:text="Tipos de lixos"
             android:textColor="@color/white"
@@ -64,7 +65,7 @@
             android:id="@+id/btnCreditos"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginVertical="10dp"
             android:background="@drawable/button_shape"
             android:text="Créditos"
             android:textColor="@color/white"

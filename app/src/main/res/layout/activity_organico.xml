@@ -42,8 +42,6 @@
         android:layout_height="0dp"
         android:background="@drawable/shape_container"
         android:orientation="vertical"
-        android:paddingHorizontal="15dp"
-        android:paddingBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3"
         android:gravity="center_vertical">
@@ -56,6 +54,7 @@
             android:paddingHorizontal="20dp"
             android:text="Resíduos alimentares\n(sem tempero)\n\nResíduos de jardinagem\n\nPó de café e coador\n\nSaquinhos de chá\n\nJornal"
             android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/dark_blue"
             android:textSize="24sp"
             android:textStyle="bold" />
