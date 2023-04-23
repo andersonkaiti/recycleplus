@@ -42,121 +42,139 @@
         android:background="@drawable/shape_container"
         android:orientation="vertical"
         android:paddingHorizontal="15dp"
-        android:paddingBottom="20dp"
+        android:paddingVertical="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardReciclaveis"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/dark_blue"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            app:cardCornerRadius="25dp">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReciclaveis"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:layout_height="90dp"
+                android:backgroundTint="@color/dark_blue"
+                app:cardCornerRadius="25dp">
 
-                <ImageView
-                    android:id="@+id/imageReciclaveis"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:src="@drawable/lixeira_amarela" />
-
-                <TextView
-                    android:id="@+id/textReciclaveis"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="Recicláveis"
-                    android:textColor="@color/white"
-                    android:textSize="35sp"
-                    android:textAlignment="viewStart"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageReciclaveis"
+                        android:layout_width="60dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/lixeira_amarela" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardComum"
+                    <TextView
+                        android:id="@+id/textReciclaveis"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="Recicláveis"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="50dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/dark_blue"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            app:cardCornerRadius="25dp">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardComum"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:layout_height="90dp"
+                android:backgroundTint="@color/dark_blue"
+                app:cardCornerRadius="25dp">
 
-                <ImageView
-                    android:id="@+id/imageComum"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:src="@drawable/lixeira_vermelha" />
-
-                <TextView
-                    android:id="@+id/textComum"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="Comum (Rejeitos)"
-                    android:textColor="@color/white"
-                    android:textSize="35sp"
-                    android:textAlignment="viewStart"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageComum"
+                        android:layout_width="60dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/lixeira_vermelha" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardOrganico"
+                    <TextView
+                        android:id="@+id/textComum"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="Comum (Rejeitos)"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="50dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/dark_blue"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            app:cardCornerRadius="25dp">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOrganico"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:layout_height="90dp"
+                android:backgroundTint="@color/dark_blue"
+                app:cardCornerRadius="25dp">
 
-                <ImageView
-                    android:id="@+id/imageOrganico"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:src="@drawable/lixeira_marrom" />
-
-                <TextView
-                    android:id="@+id/textOrganico"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="Orgânico"
-                    android:textColor="@color/white"
-                    android:textSize="35sp"
-                    android:textAlignment="viewStart"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageOrganico"
+                        android:layout_width="60dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/lixeira_marrom" />
 
+                    <TextView
+                        android:id="@+id/textOrganico"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:text="Orgânico"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="50dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
     </LinearLayout>
 
