@@ -21,7 +21,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="578px"
+        android:layout_height="150dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -46,19 +46,288 @@
         app:layout_constraintTop_toBottomOf="@+id/view3"
         android:gravity="center_vertical">
 
-        <TextView
-            android:id="@+id/Reciclavel"
+        <ScrollView
+            android:id="@+id/scrollViewReciclaveis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:paddingHorizontal="20dp"
-            android:text="Resíduos alimentares\n(sem tempero)\n\nResíduos de jardinagem\n\nPó de café e coador\n\nSaquinhos de chá\n\nJornal"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textColor="@color/dark_blue"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageResiduosAlimentares"
+                                        android:layout_width="45dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textResiduosAlimentares"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Resíduos alimentares\n(sem tempero)."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageResiduosJardinagem"
+                                        android:layout_width="45dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textResiduosJardinagem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Resíduos de\njardinagem."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imagePoCafeCoador"
+                                        android:layout_width="45dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textPoCafeCoador"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Pó de café e\ncoador."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageSaquinhosCha"
+                                        android:layout_width="45dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textSaquinhosCha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Saquinhos de\nchá."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageJornal"
+                                        android:layout_width="45dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textJornal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Jornal.\n"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
