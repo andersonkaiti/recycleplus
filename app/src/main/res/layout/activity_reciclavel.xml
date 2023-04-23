@@ -34,7 +34,7 @@
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view3">
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/scrollViewReciclaveis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -88,15 +88,15 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
+                                    android:background="@color/white"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/imageBateria"
-                                        android:layout_width="75dp"
+                                        android:id="@+id/imageMetal"
+                                        android:layout_width="45dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/bateria" />
+                                        app:srcCompat="@drawable/lata" />
                                 </LinearLayout>
 
                                 <TextView
@@ -105,7 +105,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Chumbo, níquel, zinco e mercúrio, utilizados em baterias."
+                                    android:text="Latas de alimentos e bebidas."
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -137,75 +137,19 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
+                                    android:background="@color/white"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/imageMetal"
-                                        android:layout_width="75dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lata" />
-                                </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textMetal"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Utensílios domésticos, latas de alimentos e bebidas."
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/imageFerragens"
-                                        android:layout_width="75dp"
+                                        android:id="@+id/imageClipesGrampos"
+                                        android:layout_width="30dp"
                                         android:layout_height="60dp"
                                         app:srcCompat="@drawable/grampo" />
                                 </LinearLayout>
 
                                 <TextView
-                                    android:id="@+id/textFerragens"
+                                    android:id="@+id/textClipesGrampos"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -217,56 +161,8 @@
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/imageAluminio"
-                                        android:layout_width="75dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lata" />
-                                </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textAluminio"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Recipientes de\nalumínio."
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -297,73 +193,73 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
+                                    android:background="@color/white"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/imagePlasticos"
+                                        android:id="@+id/imageRecipientesAluminio"
+                                        android:layout_width="75dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_amarela" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textFerragens"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Recipientes de alumínio (sem resíduo)."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imagePlastico"
                                         android:layout_width="75dp"
                                         android:layout_height="60dp"
                                         app:srcCompat="@drawable/plastico" />
                                 </LinearLayout>
 
                                 <TextView
-                                    android:id="@+id/textPlasticos"
+                                    android:id="@+id/textPlastico"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Plásticos"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/imageIsopor"
-                                        android:layout_width="75dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/recipiente_de_comida" />
-                                </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textIsopor"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Recipientes de\nIsopor."
+                                    android:text="Plástico.\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -401,7 +297,111 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageRecipienteIsopor"
+                                        android:layout_width="75dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/recipiente_de_comida" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textRecipienteIsopor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Recipiente de\nIsopor."
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageEmbalagens"
+                                        android:layout_width="75dp"
+                                        android:layout_height="60dp"
+                                        app:srcCompat="@drawable/lixeira_amarela" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textEmbalagens"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Embalagens.\n"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="175dp"
+                            android:layout_height="125dp"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/dark_blue"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
@@ -418,7 +418,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Tubo de caneta."
+                                    android:text="Tubo de caneta.\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -450,24 +450,24 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:background="@drawable/shape_container"
+                                    android:background="@color/white"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/imageNada"
+                                        android:id="@+id/imageVidro"
                                         android:layout_width="75dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/recipiente_de_comida" />
+                                        app:srcCompat="@drawable/garrafas" />
                                 </LinearLayout>
 
                                 <TextView
-                                    android:id="@+id/textNada"
+                                    android:id="@+id/textVidro"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Recipientes de\nIsopor."
+                                    android:text="Vidro.\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
