@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@color/dark_white"
     tools:context=".Referencias">
 
     <androidx.appcompat.widget.Toolbar
@@ -18,76 +18,966 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/btnLogo"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginHorizontal="20dp"
-            android:backgroundTint="@color/white"
-            android:text="Logo do aplicativo"
-            android:textColor="@color/dark_blue"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp" />
-
-        <TextView
-            android:id="@+id/logo1ref"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:gravity="center"
-            android:paddingHorizontal="20dp"
-            android:text="(Imagem de juicy_fish)"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
 
-        <Button
-            android:id="@+id/btnImagens"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginHorizontal="20dp"
-            android:backgroundTint="@color/white"
-            android:text="Imagens das telas"
-            android:textColor="@color/dark_blue"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp" />
+            android:layout_height="2000dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/imagemsredf"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:gravity="center"
-            android:paddingHorizontal="20dp"
-            android:text="(People illustrations by Storyset)"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="horizontal">
 
-    </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/logoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="LOGO DO APLICATIVO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refLogo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Reuso ícones criados\npor Hilmy Abiyyu A. - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageTelas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="IMAGENS DAS TELAS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refTelas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="(People illustrations by Storyset)"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/MetaisTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="LATA"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refMetais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Lata de cerveja ícones criados\npor Freepik"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/grampoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="CLIPE/GRAMPO  "
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refGrampo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Clipe de papel ícones criadospor Freepik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recipienteAluminioSemResiduoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="RECIPIENTE DE ALUMÍNIO\nSEM RESÍDUO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refrecipienteAluminioSemResiduo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Foil icons created by Freepik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/garrafasPlasticoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="GARRAFAS DE PLÁSTICO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refGarrafasPlastico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Plastico ícones criados\npor monkik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/isoporTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="ISOPOR"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refIsopor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Isopor ícones criados\npor andinur - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/canetaTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="CANETA"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refCaneta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Stationary icons created\nby andinur - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/garrafasVidroTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="GARRAFAS DE VIDRO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refGarrafasVidro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Garrafa ícones criados\npor Freepik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/adesivoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="ADESIVO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refAdesivo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Adesivo ícones criados\npor Good Ware - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/papelHigienicoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="PAPEL HIGIÊNICO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refPapelHigienico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Papel higiênico ícones criados\npor Icon home - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/embalagensResiduosTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="EMBALAGENS COM RESÍDUOS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refEmbalagensResiduos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="nada"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/guardanaposUsadosTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="GUARDANAPOS USADOS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refGuardanaposUsados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="nada"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fotografiaTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="FOTOGRAFIA"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refFotografia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Cópia de ícones criados\npor Freepik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/celofaneTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="CELOFANE"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refCelofane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Papel ícones criados por Pixel perfect - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/alimentosTemperadosTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="ALIMENTOS TEMPERADOS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refAlimentosTemperados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Sal ícones criados por turkkub - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/caboPanelaTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="CABO DE PANELA"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refCaboPanela"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Panela ícones criados\npor Graphix's Art - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/espelhoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="ESPELHO E AMPOLAS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refEspelho"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Móveis e casa ícones criados por Freepik - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/loucasTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="LOUÇAS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refLoucas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vidrosTemperadosTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="VIDROS TEMPERADOS"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refVidrosTemperados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Vidro ícones criados por AbtoCreative - Flaticon"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

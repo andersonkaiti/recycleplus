@@ -96,9 +96,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageProdutosColantes"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/adesivo" />
                                 </LinearLayout>
 
                                 <TextView
@@ -147,7 +147,7 @@
                                         android:id="@+id/imagePapelHigienico"
                                         android:layout_width="45dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/papel_higienico" />
                                 </LinearLayout>
 
                                 <TextView
@@ -250,9 +250,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageGuardanaposUsados"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/guardanapos_utilizados" />
                                 </LinearLayout>
 
                                 <TextView
@@ -305,9 +305,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageFotografia"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/fotografia" />
                                 </LinearLayout>
 
                                 <TextView
@@ -354,9 +354,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageCelofane"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/celofane" />
                                 </LinearLayout>
 
                                 <TextView
@@ -409,9 +409,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageAlimentosTemperados"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/alimentos_temperados" />
                                 </LinearLayout>
 
                                 <TextView
@@ -460,7 +460,7 @@
                                         android:id="@+id/imageAcrilico"
                                         android:layout_width="75dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/acrilico" />
                                 </LinearLayout>
 
                                 <TextView
@@ -515,7 +515,7 @@
                                         android:id="@+id/imageCaboPanela"
                                         android:layout_width="45dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/cabos_de_panela" />
                                 </LinearLayout>
 
                                 <TextView
@@ -617,9 +617,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageEspelhoAmpolas"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/espelhos" />
                                 </LinearLayout>
 
                                 <TextView
@@ -666,9 +666,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageLoucas"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/loucas" />
                                 </LinearLayout>
 
                                 <TextView
@@ -721,9 +721,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageVidrosTemperados"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/vidro_temperado" />
                                 </LinearLayout>
 
                                 <TextView

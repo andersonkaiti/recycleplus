@@ -201,7 +201,7 @@
                                         android:id="@+id/imageRecipientesAluminio"
                                         android:layout_width="75dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_amarela" />
+                                        app:srcCompat="@drawable/aluminium_paper" />
                                 </LinearLayout>
 
                                 <TextView
@@ -354,7 +354,7 @@
                                         android:id="@+id/imageEmbalagens"
                                         android:layout_width="75dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_amarela" />
+                                        app:srcCompat="@drawable/salgadinhos" />
                                 </LinearLayout>
 
                                 <TextView
