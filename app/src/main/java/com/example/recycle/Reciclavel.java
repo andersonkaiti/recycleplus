@@ -14,7 +14,7 @@ public class Reciclavel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reciclavel);
 
-        Toolbar toolbar = findViewById(R.id.toolbar7);
+        Toolbar toolbar = findViewById(R.id.toolbarReciclael);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

@@ -14,7 +14,7 @@ public class Organico extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_organico);
 
-        Toolbar toolbar = findViewById(R.id.toolbar6);
+        Toolbar toolbar = findViewById(R.id.toolbarOrganico);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

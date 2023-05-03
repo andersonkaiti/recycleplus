@@ -4,53 +4,49 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.recycle.databinding.ActivityTiposDeLixosBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class TiposLixos extends AppCompatActivity {
-
-    private CardView cardReciclaveis, cardComum, cardOrganico;
-
+    ActivityTiposDeLixosBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipos_de_lixos);
+        binding = ActivityTiposDeLixosBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        ColorStateList colorStateList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.white));
+        bottomNavigationView.setItemIconTintList(colorStateList);
+        bottomNavigationView.setItemTextColor(colorStateList);
 
-        cardReciclaveis = findViewById(R.id.cardReciclaveis);
-        cardComum = findViewById(R.id.cardComum);
-        cardOrganico = findViewById(R.id.cardOrganico);
+        replaceFragment(new lixosFragment());
 
-        cardReciclaveis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaReciclaveis = new Intent(TiposLixos.this, Reciclavel.class);
-                startActivity(telaReciclaveis);
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.reger:
+                    replaceFragment(new REGERFragment());
+                    break;
+                case R.id.lixos:
+                    replaceFragment(new lixosFragment());
+                    break;
+                case R.id.creditos:
+                    replaceFragment(new creditosFragment());
+                    break;
             }
-        });
-
-        cardComum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaComumRejeitos = new Intent(TiposLixos.this, Comum.class);
-                startActivity(telaComumRejeitos);
-            }
-        });
-
-        cardOrganico.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent telaOrganico = new Intent(TiposLixos.this, Organico.class);
-                startActivity(telaOrganico);
-            }
+            return true;
         });
     }
 
@@ -60,5 +56,12 @@ public class TiposLixos extends AppCompatActivity {
             finish();
         }
         return super.onContextItemSelected(item);
+    }
+
+    private void replaceFragment (Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
     }
 }

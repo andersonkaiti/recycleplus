@@ -14,7 +14,7 @@ public class Comum extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comum_rejeito);
 
-        Toolbar toolbar = findViewById(R.id.toolbar5);
+        Toolbar toolbar = findViewById(R.id.toolbarComumRejeito);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

@@ -8,7 +8,7 @@
     tools:context=".Organico">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar6"
+        android:id="@+id/toolbarOrganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -19,17 +19,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageLixeiraMarrom"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutOrganico"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/lixeira_marrom" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/viewOrganico"
         android:layout_width="match_parent"
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,13 +37,13 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayoutOrganico"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/shape_container"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/viewOrganico"
         android:gravity="center_vertical">
 
         <ScrollView
@@ -96,9 +96,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageResiduosAlimentares"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                        app:srcCompat="@drawable/maca" />
                                 </LinearLayout>
 
                                 <TextView
@@ -145,9 +145,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageResiduosJardinagem"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                        app:srcCompat="@drawable/jardinagem" />
                                 </LinearLayout>
 
                                 <TextView
@@ -201,9 +201,9 @@
 
                                     <ImageView
                                         android:id="@+id/imagePoCafeCoador"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                        app:srcCompat="@drawable/cafe" />
                                 </LinearLayout>
 
                                 <TextView
@@ -250,9 +250,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageSaquinhosCha"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                        app:srcCompat="@drawable/cha" />
                                 </LinearLayout>
 
                                 <TextView
@@ -305,9 +305,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageJornal"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_marrom" />
+                                        app:srcCompat="@drawable/jornal" />
                                 </LinearLayout>
 
                                 <TextView

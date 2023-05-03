@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="REGER"
+        android:icon="@drawable/reger"
+        android:id="@+id/reger" />
+    <item
+        android:title="LIXOS"
+        android:icon="@drawable/lixos"
+        android:id="@+id/lixos" />
+    <item
+        android:title="CRÉDITOS"
+        android:icon="@drawable/creditos"
+        android:id="@+id/creditos" />
+</menu>

@@ -1,48 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".Creditos">
+    android:background="@color/dark_white"
+    tools:context=".creditosFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/btnReferencias"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/integrantes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/button_shape"
                 android:paddingVertical="10dp"
                 android:text="INTEGRANTES DO GRUPO"
@@ -53,9 +34,8 @@
 
             <TextView
                 android:id="@+id/integrantesnomes"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="142dp"
-                android:layout_marginBottom="5dp"
                 android:text="Anderson Kaiti\nCauê Mateus de Araújo\nFelipe Vieira Delandrea\nGustavo Kazuki Ueda\nJoão Vitor Camargo\n"
                 android:textAlignment="center"
                 android:textColor="@color/dark_blue"
@@ -77,10 +57,10 @@
 
             <TextView
                 android:id="@+id/elvio"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
                 android:text="Prof. Dr. Elvio Gilberto da Silva"
+                android:textAlignment="center"
                 android:textColor="@color/dark_blue"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -110,12 +90,13 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/imageLogos"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="105dp"
                 android:layout_marginHorizontal="20dp"
                 android:paddingHorizontal="20dp"
                 app:srcCompat="@drawable/logo_unisagrado" />
+
         </LinearLayout>
 
         <Button
@@ -123,14 +104,15 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"
-            android:background="@drawable/button_shape"
             android:text="Referências"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="50dp" />
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="20dp" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

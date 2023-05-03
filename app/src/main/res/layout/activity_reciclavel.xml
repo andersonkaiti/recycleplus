@@ -8,7 +8,7 @@
     tools:context=".Reciclavel">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar7"
+        android:id="@+id/toolbarReciclael"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -19,17 +19,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageLixeiraAmarela"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@id/view3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutReciclavel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/lixeira_amarela" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/viewReciclavel"
         android:layout_width="match_parent"
         android:layout_height="1px"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,12 +37,13 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <LinearLayout
+        android:id="@+id/linearLayoutReciclavel"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/shape_container"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3">
+        app:layout_constraintTop_toBottomOf="@+id/viewReciclavel">
 
         <ScrollView
             android:id="@+id/scrollViewReciclaveis"
@@ -154,7 +155,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Ferragens\nClipes e grampos."
+                                    android:text="Ferragens | Clipes e grampos."
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -314,7 +315,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Recipiente de\nIsopor."
+                                    android:text="Recipiente de\nisopor."
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />

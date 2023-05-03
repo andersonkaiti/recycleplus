@@ -13,40 +13,24 @@
         tools:targetApi="31">
         <activity
             android:name=".Referencias"
-            android:exported="false"
-            android:parentActivityName=".Creditos"/>
+            android:exported="false" />
         <activity
             android:name=".Organico"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".TiposLixos"/>
-        <activity
-            android:name=".Creditos"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".RecyclePlus"/>
+            android:parentActivityName=".TiposLixos"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Comum"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".TiposLixos"/>
+            android:parentActivityName=".TiposLixos"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Reciclavel"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".TiposLixos"/>
+            android:parentActivityName=".TiposLixos"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TiposLixos"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".RecyclePlus"/>
-        <activity
-            android:name=".SobreProjetoReger"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".RecyclePlus"/>
-        <activity
-            android:name=".RecyclePlus"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
