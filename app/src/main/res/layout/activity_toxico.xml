@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".Toxico">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarToxico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLixeiraToxico"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutToxico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lixo_toxico" />
+
+    <View
+        android:id="@+id/viewToxico"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToxico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_container"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewToxico">
+
+        <ScrollView
+            android:id="@+id/scrollViewToxico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="A eliminação de resíduos tóxicos deve ser realizada de forma cuidadosa e responsável. Seguem alguns passos gerais para reciclar resíduos tóxicos de maneira segura:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardIdentificacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginVertical="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/identificacaoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:text="IDENTIFICAÇÃO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/refIdentificacao"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:justificationMode="inter_word"
+                                android:textAlignment="viewStart"
+                                android:text="Identifique os tipos de resíduos tóxicos que possui: Os resíduos tóxicos podem ser de muitos tipos, como baterias, pilhas, medicamentos vencidos, produtos de limpeza, tintas, produtos químicos, eletrônicos, entre outros."
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardCentroReciclagem"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:layout_marginVertical="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="290dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/centroReciclagemTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:text="CENTRO DE RECICLAGEM"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/refCentroReciclagem"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                android:layout_weight="5.5"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:justificationMode="inter_word"
+                                android:text="Pesquise centros de reciclagem: Verifique se existem centros de reciclagem em sua localidade que aceitem esse tipo de resíduo tóxico e quais são os procedimentos que devem ser seguidos para levá-los."
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardArmazenamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="370dp"
+                        android:layout_marginVertical="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="370dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/armazenamentoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:text="ARMAZENAMENTO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/refArmazenamento"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                android:layout_weight="4"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:justificationMode="inter_word"
+                                android:text="Armazenamento seguro: Enquanto se preparam para o transporte, os resíduos tóxicos devem ser armazenados de maneira segura e adequada para evitar a contaminação e minimizar o risco de exposição. Certifique-se de ler os rótulos dos produtos e seguir as instruções de armazenamento de acordo."
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="520dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardTransporte"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:layout_marginVertical="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/transporteTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.7"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:text="TRANSPORTE ADEQUADO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_marginTop="20dp"
+                                    app:srcCompat="@drawable/transporte" />
+
+                                <TextView
+                                    android:id="@+id/refTransporte"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="230dp"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_marginVertical="10dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:justificationMode="inter_word"
+                                    android:text="Transporte adequado: Os resíduos tóxicos devem ser transportados de forma segura e responsável. Se estiver transportando os resíduos por conta própria, assegure-se de embalar corretamente e protegê-los contra danos ou vazamentos."
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardDescarteApropriado"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:layout_marginVertical="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="25dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="320dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/descarteApropriadoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:text="DESCARTE APROPRIADO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/refDescarteApropriado"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                android:layout_weight="5.5"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:justificationMode="inter_word"
+                                android:text="Descarte apropriado: Leve os resíduos tóxicos a um centro de reciclagem ou instalação de tratamento autorizado para evitar danos ambientais e à saúde humana. Nunca jogue resíduos tóxicos no lixo comum ou na natureza."
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

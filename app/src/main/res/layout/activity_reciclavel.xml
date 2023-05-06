@@ -73,6 +73,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/latas"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -122,6 +123,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/clipesGrampos"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -178,6 +180,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/aluminio"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -227,6 +230,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/plastico"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -282,6 +286,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/isopor"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -331,6 +336,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/embalagens"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -386,6 +392,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/caneta"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -435,6 +442,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/vidro"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"

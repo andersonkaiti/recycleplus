@@ -65,6 +65,7 @@ public class lixosFragment extends Fragment {
         CardView cardReciclaveis = view.findViewById(R.id.cardReciclaveis);
         CardView cardComum = view.findViewById(R.id.cardComum);
         CardView cardOrganico = view.findViewById(R.id.cardOrganico);
+        CardView cardToxico = view.findViewById(R.id.cardToxico);
 
         cardReciclaveis.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +88,14 @@ public class lixosFragment extends Fragment {
             public void onClick(View v) {
                 Intent telaOrganico = new Intent(getContext(), Organico.class);
                 startActivity(telaOrganico);
+            }
+        });
+
+        cardToxico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent telaToxico = new Intent(getContext(), Toxico.class);
+                startActivity(telaToxico);
             }
         });
 

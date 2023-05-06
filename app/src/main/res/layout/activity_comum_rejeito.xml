@@ -74,6 +74,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/adesivo"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -123,6 +124,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/papelHigienico"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -145,7 +147,7 @@
 
                                     <ImageView
                                         android:id="@+id/imagePapelHigienico"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
                                         app:srcCompat="@drawable/papel_higienico" />
                                 </LinearLayout>
@@ -179,6 +181,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/embalagemResiduo"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -201,9 +204,9 @@
 
                                     <ImageView
                                         android:id="@+id/imageEmbalagensResiduos"
-                                        android:layout_width="45dp"
+                                        android:layout_width="60dp"
                                         android:layout_height="60dp"
-                                        app:srcCompat="@drawable/lixeira_vermelha" />
+                                        app:srcCompat="@drawable/leftover" />
                                 </LinearLayout>
 
                                 <TextView
@@ -228,6 +231,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/guardanapoUsado"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -283,6 +287,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/espelhoAmpola"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -332,6 +337,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/acrilico"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"
@@ -387,6 +393,7 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/louca"
                             android:layout_width="175dp"
                             android:layout_height="125dp"
                             android:layout_marginVertical="10dp"

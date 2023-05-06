@@ -12,8 +12,97 @@
         android:theme="@style/Theme.Recycle"
         tools:targetApi="31">
         <activity
+            android:name=".Jornal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaquinhoCha"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PoCafeCoador"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResiduoJardinagem"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResiduoAlimentar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Louca"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Acrilico"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EspelhoAmpolas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Guardanapo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmbalagemResiduo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PapelHigienico"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProdutosColantes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaInformativa"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vidro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TuboCaneta"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Embalagem"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Isopor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Plastico"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Aluminio"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClipesGrampos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lata"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Toxico"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Referencias"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Organico"
             android:exported="false"
