@@ -28,9 +28,7 @@ public class Organico extends AppCompatActivity {
         setContentView(R.layout.activity_organico);
 
         Toolbar toolbar = findViewById(R.id.toolbarOrganico);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        ToolbarUtil.setupToolbar(this, toolbar);
 
         for (int i = 0; i < cardIds.length; i++) {
             cards[i] = findViewById(cardIds[i]);
@@ -63,13 +61,5 @@ public class Organico extends AppCompatActivity {
             }
             v.getContext().startActivity(intent);
         }
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
-        }
-        return super.onContextItemSelected(item);
     }
 }

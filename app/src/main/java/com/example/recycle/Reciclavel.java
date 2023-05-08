@@ -33,10 +33,8 @@ public class Reciclavel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reciclavel);
 
-        Toolbar toolbar = findViewById(R.id.toolbarReciclael);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        Toolbar toolbar = findViewById(R.id.toolbarReciclavel);
+        ToolbarUtil.setupToolbar(this, toolbar);
 
 
         for (int i = 0; i < cardIds.length; i++) {
@@ -79,13 +77,5 @@ public class Reciclavel extends AppCompatActivity {
             }
             v.getContext().startActivity(intent);
         }
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            finish();
-        }
-        return super.onContextItemSelected(item);
     }
 }

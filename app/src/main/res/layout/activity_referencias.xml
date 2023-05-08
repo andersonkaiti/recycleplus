@@ -72,7 +72,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Reuso ícones criados\npor Hilmy Abiyyu A. - Flaticon"
+                            android:text="Reuso ícones criados por\nHilmy Abiyyu A. - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -120,7 +120,55 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="People illustrations by Storyset"
+                            android:text="People illustrations\nby Storyset"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLixoToxico"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/imageLixoToxico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="LIXO TÓXICO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refLixoToxico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Lixo biomédico ícones criados\npor Muhammad_Usman\n- Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -168,7 +216,7 @@
                             android:layout_weight="2"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Beer can icons created by Freepik - Flaticon"
+                            android:text="Lata de cerveja ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -216,7 +264,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Clipe de papel ícones criadospor Freepik - Flaticon"
+                            android:text="Clipe de papel ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -265,7 +313,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Foil icons created by Freepik - Flaticon"
+                            android:text="Frustrar ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -409,7 +457,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Isopor ícones criados\npor andinur - Flaticon"
+                            android:text="Salgadinhos ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -457,7 +505,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Stationary icons created\nby andinur - Flaticon"
+                            android:text="Lápis ícones criados\npor Good Ware - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -601,7 +649,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Papel higiênico ícones criados\npor Icon home - Flaticon"
+                            android:text="Papel higiênico ícones criados\npor Nikita Golubev - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -649,7 +697,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="nada"
+                            android:text="Sobra ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -697,7 +745,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="nada"
+                            android:text="Papel higiênico ícones criados\npor Icon home - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -745,7 +793,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Móveis e casa ícones criados por Freepik - Flaticon"
+                            android:text="Espelho ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -793,7 +841,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Móveis e casa ícones criados por Freepik - Flaticon"
+                            android:text="Janela ícones criados\npor phatplus - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -889,7 +937,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:text="Maçã mordida ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -937,7 +985,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:text="Areia ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -985,7 +1033,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:text="Cafeteria ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -1033,7 +1081,7 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:text="Xícara de chá ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -1045,7 +1093,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="155dp"
-                android:layout_marginBottom="20dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
@@ -1082,8 +1129,297 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:gravity="center"
-                            android:text="Louça ícones criados\npor kosonicon - Flaticon"
+                            android:text="Jornal ícones criados\npor Freepik - Flaticon"
                             android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLixoToxicoText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textLixoToxico1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="1. LIXO TÓXICO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLixoToxicoText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textLixoToxico2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="2. LIXO TÓXICO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="1. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="2. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="3. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="4. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="5. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReciclagem6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textReciclagem6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="6. TEXTO DE RECICLAGEM"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
                     </LinearLayout>

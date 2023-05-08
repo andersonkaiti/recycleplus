@@ -26,6 +26,7 @@ public class Referencias extends AppCompatActivity {
         int[] cardIds = {
                 R.id.cardLogo,
                 R.id.cardImagensTelas,
+                R.id.cardLixoToxico,
                 R.id.cardLata,
                 R.id.cardClipeGrampo,
                 R.id.cardRecipienteAluminioSemResiduo,
@@ -45,7 +46,15 @@ public class Referencias extends AppCompatActivity {
                 R.id.cardResiduosJardinagem,
                 R.id.cardPoCafeCoador,
                 R.id.cardSaquinhosCha,
-                R.id.cardJornal
+                R.id.cardJornal,
+                R.id.cardLixoToxicoText1,
+                R.id.cardLixoToxicoText2,
+                R.id.cardReciclagem1,
+                R.id.cardReciclagem2,
+                R.id.cardReciclagem3,
+                R.id.cardReciclagem4,
+                R.id.cardReciclagem5,
+                R.id.cardReciclagem6
         };
 
         String[] urls = {
@@ -55,6 +64,9 @@ public class Referencias extends AppCompatActivity {
                 // https://storyset.com/illustration/waste-management/cuate
                 // https://storyset.com/illustration/waste-management/pana
                 "https://storyset.com/people",
+
+                // https://www.flaticon.com/br/icone-gratis/lixo-toxico_8372000?term=lixo+tóxico&page=1&position=22&origin=search&related_id=8372000
+                "https://www.flaticon.com/br/icones-gratis/lixo-biomedico",
 
                 // https://www.flaticon.com/free-icon/beer-can_95982?term=can&page=1&position=3&origin=search&related_id=95982
                 "https://www.flaticon.com/free-icons/beer-can",
@@ -114,7 +126,23 @@ public class Referencias extends AppCompatActivity {
                 "https://www.flaticon.com/br/icones-gratis/xicara-de-cha",
 
                 // https://www.flaticon.com/br/icone-gratis/jornal_3208799?term=jornal&page=1&position=5&origin=search&related_id=3208799
-                "https://www.flaticon.com/br/icones-gratis/jornal"
+                "https://www.flaticon.com/br/icones-gratis/jornal",
+
+                "https://brinstrument.com/fractional-distillation/general-solvent-recycling?gclid=Cj0KCQjw0tKiBhC6ARIsAAOXutns7WEiVbe76gWnKYIlEqGjaJk0JAS8VdTadifLMUtNvOifPBGn3lQaAkYeEALw_wcB",
+
+                "https://a-otc.com/hazardous-waste-disposal-methods/",
+
+                "https://portais.univasf.edu.br/sustentabilidade/noticias-sustentaveis/onde-reciclar-latas-de-aluminio",
+
+                "https://www.reciclasampa.com.br",
+
+                "https://portais.univasf.edu.br/sustentabilidade/noticias-sustentaveis/qual-e-o-processo-de-reciclagem-do-metal",
+
+                "https://web.bndes.gov.br/bib/jspui/handle/1408/3684",
+
+                "https://www.brightmark.com/make-your-mark/learn-how-to-recycle-right?gclid=Cj0KCQjw0tKiBhC6ARIsAAOXutmgFnJ0qUZE8FJeRZwAFqHoeEWuuqiuMlT-AASWq2BkA-KZXewdl2MaAoLkEALw_wcB",
+
+                "https://www.sciencedirect.com/science/article/abs/pii/B9780123964595000143"
         };
 
         CardView[] cards = new CardView[cardIds.length];
