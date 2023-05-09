@@ -17,7 +17,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@id/btnReferencias"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="67dp">
 
             <TextView
                 android:id="@+id/integrantes"
@@ -92,8 +93,8 @@
             <ImageView
                 android:id="@+id/imageLogos"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
-                android:layout_marginHorizontal="20dp"
+                android:layout_height="120dp"
+                android:layout_marginVertical="20dp"
                 android:paddingHorizontal="20dp"
                 app:srcCompat="@drawable/logo_unisagrado" />
 

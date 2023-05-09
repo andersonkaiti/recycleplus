@@ -18,15 +18,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/imagem2_1000"
             android:layout_width="match_parent"
-            android:layout_height="578px" />
+            android:layout_height="200dp" />
 
         <View
             android:id="@+id/viewLixos"
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.35" />
+            app:layout_constraintVertical_bias="0.3" />
 
         <LinearLayout
             android:id="@+id/linearLayoutLixos"
@@ -116,7 +116,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:gravity="center"
-                            android:text="COMUM | REJEITOS"
+                            android:text="COMUNS | REJEITOS"
                             android:textColor="@color/white"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -159,7 +159,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:gravity="center"
-                            android:text="ORGÂNICO"
+                            android:text="ORGÂNICOS"
                             android:textColor="@color/white"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -202,7 +202,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:gravity="center"
-                            android:text="TÓXICO"
+                            android:text="PERIGOSOS OU QUÍMICOS"
                             android:textColor="@color/white"
                             android:textSize="30sp"
                             android:textStyle="bold"

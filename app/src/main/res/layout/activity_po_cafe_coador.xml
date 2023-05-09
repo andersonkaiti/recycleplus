@@ -18,125 +18,132 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutFormasReciclagem"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarPoCafeCoador"
-        app:srcCompat="@drawable/cafe" />
-
-    <LinearLayout
-        android:id="@+id/linearLayoutFormasReciclagem"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutTransformacao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardFormaReciclagem"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/white"
-            app:cardCornerRadius="25dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/formaReciclagemTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1.5"
-                    android:background="@color/dark_blue"
-                    android:gravity="center"
-                    android:text="FORMAS DE RECICLAGEM"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/refFormaReciclagem"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_weight="2.5"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="O pó de café e o coador de papel podem ser compostados, transformando-os em adubo para serem usados em jardins e hortas."
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayoutTransformacao"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFormasReciclagem">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPoCafeCoador">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardTransformacao"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="@color/white"
-            app:cardCornerRadius="25dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/cafe" />
 
             <LinearLayout
+                android:id="@+id/linearLayoutFormasReciclagem"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_height="260dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/transformacaoTitle"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFormaReciclagem"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@color/dark_blue"
-                    android:gravity="center"
-                    android:text="TRANSFORMAÇÃO"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/refTransformacao"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="240dp"
                     android:layout_marginVertical="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="O adubo produzido pode ser usado para fertilizar plantas e jardins."
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
 
-    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/formaReciclagemTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="FORMAS DE RECICLAGEM"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refFormaReciclagem"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_weight="2.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:justificationMode="inter_word"
+                            android:text="O pó de café e o coador de papel podem ser compostados, transformando-os em adubo para serem usados em jardins e hortas."
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTransformacao"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTransformacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/transformacaoTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/dark_blue"
+                            android:gravity="center"
+                            android:text="TRANSFORMAÇÃO"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/refTransformacao"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_weight="1.3"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:justificationMode="inter_word"
+                            android:text="O adubo produzido pode ser usado para fertilizar plantas e jardins."
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
