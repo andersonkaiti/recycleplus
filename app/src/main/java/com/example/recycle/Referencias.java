@@ -19,9 +19,7 @@ public class Referencias extends AppCompatActivity {
         setContentView(R.layout.activity_referencias);
 
         Toolbar toolbar = findViewById(R.id.toolbarReferencias);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        ToolbarUtil.setupToolbar(this, toolbar);
 
         int[] cardIds = {
                 R.id.cardLogo,

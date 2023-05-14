@@ -11,109 +11,172 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@id/btnReferencias"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="67dp">
-
-            <TextView
-                android:id="@+id/integrantes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/button_shape"
-                android:paddingVertical="10dp"
-                android:text="INTEGRANTES DO GRUPO"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/integrantesnomes"
-                android:layout_width="match_parent"
-                android:layout_height="142dp"
-                android:text="Anderson Kaiti\nCauê Mateus de Araújo\nFelipe Vieira Delandrea\nGustavo Kazuki Ueda\nJoão Vitor Camargo\n"
-                android:textAlignment="center"
-                android:textColor="@color/dark_blue"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/orientador"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/button_shape"
-                android:paddingVertical="10dp"
-                android:text="DOCENTE ORIENTADOR"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/elvio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Prof. Dr. Elvio Gilberto da Silva"
-                android:textAlignment="center"
-                android:textColor="@color/dark_blue"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/colaboradora"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/button_shape"
-                android:paddingVertical="10dp"
-                android:text="COLABORADORA"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/beatriz"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:text="Prof.ª Dr.ª Beatriz Antoniassi Tavares"
-                android:textAlignment="center"
-                android:textColor="@color/dark_blue"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageLogos"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginVertical="20dp"
-                android:paddingHorizontal="20dp"
-                app:srcCompat="@drawable/logo_unisagrado" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnReferencias"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginHorizontal="20dp"
-            android:text="Referências"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:cornerRadius="50dp"
+            android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            tools:layout_editor_absoluteX="20dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/integrantes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="50dp"
+                        android:paddingVertical="5dp"
+                        android:text="INTEGRANTES DO GRUPO"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/dark_blue"
+                        android:layout_marginHorizontal="100dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/integrantesnomes"
+                        android:layout_width="match_parent"
+                        android:layout_height="142dp"
+                        android:text="Anderson Kaiti\nCauê Mateus de Araújo\nFelipe Vieira Delandrea\nGustavo Kazuki Ueda\nJoão Vitor Camargo\n"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/orientador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingVertical="5dp"
+                        android:text="DOCENTE ORIENTADOR"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/dark_blue"
+                        android:layout_marginHorizontal="100dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/elvio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prof. Dr. Elvio Gilberto da Silva"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/colaboradora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingVertical="5dp"
+                        android:text="COLABORADORA"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/dark_blue"
+                        android:layout_marginHorizontal="100dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/beatriz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="Prof.ª Dr.ª Beatriz Antoniassi Tavares"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/iniciativa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="INICIATIVA"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageLogoCienciaComputacao"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginHorizontal="20dp"
+                            app:srcCompat="@drawable/ciencia_da_computacao" />
+
+                        <TextView
+                            android:id="@+id/apoio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="APOIO"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageLogoPastoral"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginHorizontal="20dp"
+                            app:srcCompat="@drawable/monolitica_pastoral_nova" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnReferencias"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Referências"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="50dp" />
+            </LinearLayout>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
