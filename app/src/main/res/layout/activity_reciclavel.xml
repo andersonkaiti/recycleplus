@@ -106,7 +106,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Latas de alimentos e bebidas."
+                                    android:text="Latas de alimentos e bebidas"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -156,7 +156,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Ferragens | Clipes e grampos."
+                                    android:text="Ferragens | Clipes e grampos"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -213,7 +213,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Recipientes de alumínio (sem resíduo)."
+                                    android:text="Recipientes de alumínio (sem resíduo)"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -263,7 +263,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Plástico.\n"
+                                    android:text="Plásticos\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -319,7 +319,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Recipiente de\nisopor."
+                                    android:text="Recipientes de\nisopor"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -369,7 +369,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Embalagens.\n"
+                                    android:text="Embalagens\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -425,7 +425,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Tubo de caneta.\n"
+                                    android:text="Tubo de caneta\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -475,7 +475,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Vidro.\n"
+                                    android:text="Vidros\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />

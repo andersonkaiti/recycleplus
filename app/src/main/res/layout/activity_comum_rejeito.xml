@@ -107,7 +107,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Produtos colantes.\n"
+                                    android:text="Produtos colantes\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -157,7 +157,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Papel higiênico.\n"
+                                    android:text="Papeis higiênicos\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -214,7 +214,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Embalagens com\nresíduos."
+                                    android:text="Embalagens com\nresíduos"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -264,7 +264,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Guardanapos\nusados."
+                                    android:text="Guardanapos\nusados"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -320,7 +320,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Espelho e\nampolas."
+                                    android:text="Espelhos e\nampolas"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -370,7 +370,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Acrílico.\n"
+                                    android:text="Acrílicos\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -426,7 +426,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Louças.\n"
+                                    android:text="Louças\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />

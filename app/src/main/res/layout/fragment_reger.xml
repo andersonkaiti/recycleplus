@@ -53,7 +53,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="10dp"
                     android:justificationMode="inter_word"
-                    android:text="Olá, seja bem-vindo! O projeto REGER - Redução da Geração de Resíduos surgiu como uma solução para um problema que afeta muitas IESs ao redor do mundo: o descarte excessivo de lixo. Com o intuito de promover a redução do lixo gerado dentro do campus universitário e o descarte adequado dos resíduos, este aplicativo foi desenvolvido a fim de esclarecer e organizar as informações do projeto de forma simples e concisa."
+                    android:text="Olá, seja bem-vindo! O projeto REGER - Redução da Geração de Resíduos surgiu como uma solução para um problema que afeta muitas IESs ao redor do mundo: o descarte excessivo de lixo. Com o intuito de promover a redução do lixo gerado dentro do campus universitário e o descarte adequado dos resíduos, este aplicativo foi desenvolvido a fim de esclarecer e organizar as informações do projeto de forma simples e concisa.\n\nPARA MAIS INFORMAÇÕES, ACESSE O SITE DO UNISAGRADO."
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>

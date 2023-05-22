@@ -107,7 +107,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Resíduos alimentares\n(sem tempero)."
+                                    android:text="Resíduos alimentares\n(sem tempero)"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -157,7 +157,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Resíduos de\njardinagem."
+                                    android:text="Resíduos de\njardinagem"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -214,7 +214,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Pó de café e\ncoador."
+                                    android:text="Pós de café e\ncoadores"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -264,7 +264,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Saquinhos de\nchá."
+                                    android:text="Saquinhos de\nchá"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -320,7 +320,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Jornal.\n"
+                                    android:text="Jornais\n"
                                     android:textColor="@color/white"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />

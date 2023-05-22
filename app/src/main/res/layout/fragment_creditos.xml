@@ -31,13 +31,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/integrantes"
+                        android:id="@+id/nomeDisciplina"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="50dp"
                         android:paddingVertical="5dp"
-                        android:text="INTEGRANTES DO GRUPO"
+                        android:text="Desenvolvimento de Software"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="24sp"
@@ -46,19 +46,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
-                        android:background="@color/dark_blue"
                         android:layout_marginHorizontal="100dp"
-                        android:orientation="horizontal"></LinearLayout>
+                        android:background="@color/dark_blue"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/integrantesnomes"
-                        android:layout_width="match_parent"
-                        android:layout_height="142dp"
-                        android:text="Anderson Kaiti\nCauê Mateus de Araújo\nFelipe Vieira Delandrea\nGustavo Kazuki Ueda\nJoão Vitor Camargo\n"
-                        android:textAlignment="center"
-                        android:textColor="@color/dark_blue"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/orientador"
@@ -67,18 +59,11 @@
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
                         android:paddingVertical="5dp"
-                        android:text="DOCENTE ORIENTADOR"
+                        android:text="Docente Orientador"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:background="@color/dark_blue"
-                        android:layout_marginHorizontal="100dp"
-                        android:orientation="horizontal"></LinearLayout>
 
                     <TextView
                         android:id="@+id/elvio"
@@ -97,18 +82,11 @@
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
                         android:paddingVertical="5dp"
-                        android:text="COLABORADORA"
+                        android:text="Colaboradora"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp"
-                        android:background="@color/dark_blue"
-                        android:layout_marginHorizontal="100dp"
-                        android:orientation="horizontal"></LinearLayout>
 
                     <TextView
                         android:id="@+id/beatriz"
@@ -121,17 +99,48 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/integrantesGrupo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="50dp"
+                        android:paddingVertical="5dp"
+                        android:text="Integrantes da Equipe"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginHorizontal="100dp"
+                        android:background="@color/dark_blue"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/integrantesnomes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Anderson Kaiti\nCauê Mateus de Araújo\nFelipe Vieira Delandrea\nGustavo Kazuki Ueda\nJoão Vitor Camargo\n"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="50dp"
+                        android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/iniciativa"
+                            android:id="@+id/desenvolvimento"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="INICIATIVA"
+                            android:text="Desenvolvimento:"
                             android:textAlignment="center"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
@@ -148,7 +157,7 @@
                             android:id="@+id/apoio"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="APOIO"
+                            android:text="Apoio:"
                             android:textAlignment="center"
                             android:textColor="@color/dark_blue"
                             android:textSize="24sp"
