@@ -43,28 +43,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardFormaReciclagem"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/formaReciclagemTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="FORMAS DE RECICLAGEM"
@@ -75,15 +75,12 @@
                         <TextView
                             android:id="@+id/refFormaReciclagem"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="4"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="Embalagens com resíduos devem ser limpas antes da reciclagem. Se ainda tiverem restos de alimentos ou outros materiais, não devem ser colocados na coleta seletiva."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -93,28 +90,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="260dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardDestino"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="240dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/destinoTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.3"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="DESTINO"
@@ -125,15 +122,12 @@
                         <TextView
                             android:id="@+id/refDestino"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="2.5"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="Esses materiais podem ser reciclados, mas se ainda estiverem sujos, devem ser descartados no lixo comum."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>

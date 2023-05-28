@@ -31,7 +31,7 @@
     <LinearLayout
         android:id="@+id/linearLayoutFormasReciclagem"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayoutDestino"
@@ -42,22 +42,22 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardFormaReciclagem"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
             android:backgroundTint="@color/white"
             app:cardCornerRadius="25dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/formaReciclagemTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
                     android:background="@color/dark_blue"
                     android:gravity="center"
                     android:text="FORMAS DE RECICLAGEM"
@@ -68,15 +68,12 @@
                 <TextView
                     android:id="@+id/refFormaReciclagem"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_weight="2.5"
+                    android:layout_marginVertical="20dp"
                     android:background="@color/white"
-                    android:gravity="center"
                     android:justificationMode="inter_word"
                     android:text="Esses itens geralmente não são recicláveis e devem ser descartados no lixo comum."
-                    android:textAlignment="viewStart"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -87,7 +84,7 @@
     <LinearLayout
         android:id="@+id/linearLayoutDestino"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:orientation="horizontal"
         android:gravity="center"
@@ -99,21 +96,22 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardDestino"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
             android:backgroundTint="@color/white"
             app:cardCornerRadius="25dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/destinoTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
                     android:background="@color/dark_blue"
                     android:gravity="center"
                     android:text="DESTINO"
@@ -124,15 +122,12 @@
                 <TextView
                     android:id="@+id/refDestino"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_weight="1"
+                    android:layout_marginVertical="20dp"
                     android:background="@color/white"
-                    android:gravity="center"
                     android:justificationMode="inter_word"
                     android:text="Eles acabam em aterros sanitários."
-                    android:textAlignment="viewStart"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>

@@ -18,426 +18,477 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageLixeiraVermelha"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutComumRejeito"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/lixeira_vermelha" />
-
-    <View
-        android:id="@+id/viewComumRejeito"
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <LinearLayout
-        android:id="@+id/linearLayoutComumRejeito"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/shape_container"
-        android:orientation="vertical"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewComumRejeito"
-        android:gravity="center_vertical">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ScrollView
-            android:id="@+id/scrollViewReciclaveis"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_vertical"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageLixeiraVermelha"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/lixeira_vermelha" />
+
             <LinearLayout
+                android:id="@+id/linearLayoutComumRejeito"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_container"
+                android:gravity="center_vertical"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/adesivo"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/adesivo"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardCornerRadius="25dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
 
-                                    <ImageView
-                                        android:id="@+id/imageProdutosColantes"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/adesivo" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imageProdutosColantes"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/adesivo" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textProdutosColantes"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Produtos colantes\n"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
                                 </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/textProdutosColantes"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Produtos colantes\n"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/papelHigienico"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/papelHigienico"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardCornerRadius="25dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
 
-                                    <ImageView
-                                        android:id="@+id/imagePapelHigienico"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/papel_higienico" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imagePapelHigienico"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/papel_higienico" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textPapelHigienico"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Papeis higiênicos\n"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
                                 </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textPapelHigienico"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Papeis higiênicos\n"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/embalagemResiduo"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/imageEmbalagensResiduos"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/leftover" />
-                                </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textEmbalagensResiduos"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Embalagens com\nresíduos"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/guardanapoUsado"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/embalagemResiduo"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardCornerRadius="25dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
 
-                                    <ImageView
-                                        android:id="@+id/imageGuardanaposUsados"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/guardanapos_utilizados" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imageEmbalagensResiduos"
+                                            android:layout_width="75dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/leftover" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textEmbalagensResiduos"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Embalagens com resíduos"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
                                 </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/textGuardanaposUsados"
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/guardanapoUsado"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardCornerRadius="25dp">
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Guardanapos\nusados"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-                </LinearLayout>
+                                    android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imageGuardanaposUsados"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/guardanapos_utilizados" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textGuardanaposUsados"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Guardanapos\nusados"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/espelhoAmpola"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/espelhoAmpola"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                app:cardCornerRadius="25dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
 
-                                    <ImageView
-                                        android:id="@+id/imageEspelhoAmpolas"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/espelhos" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingVertical="10dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageEspelhoAmpolas"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/espelhos" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal"
+                                        android:paddingVertical="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textEspelhoAmpolas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Espelhos e\nampolas"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
                                 </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/textEspelhoAmpolas"
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/acrilico"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                app:cardCornerRadius="25dp">
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Espelhos e\nampolas"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingVertical="10dp">
+
+                                        <ImageView
+                                            android:id="@+id/imageAcrilico"
+                                            android:layout_width="75dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/acrilico" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal"
+                                        android:paddingVertical="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textAcrilico"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:gravity="center"
+                                            android:text="Acrílicos\n"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/acrilico"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/louca"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardCornerRadius="25dp">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
 
-                                    <ImageView
-                                        android:id="@+id/imageAcrilico"
-                                        android:layout_width="75dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/acrilico" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imageLoucas"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            app:srcCompat="@drawable/loucas" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingVertical="10dp"
+                                        android:background="@color/dark_blue"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLoucas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:paddingHorizontal="18dp"
+                                            android:gravity="center"
+                                            android:text="Louças\n"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
                                 </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/textAcrilico"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Acrílicos\n"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/louca"
-                            android:layout_width="175dp"
-                            android:layout_height="125dp"
-                            android:layout_marginVertical="10dp"
-                            android:backgroundTint="@color/dark_blue"
-                            app:cardCornerRadius="25dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/white"
-                                    android:gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/imageLoucas"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        app:srcCompat="@drawable/loucas" />
-                                </LinearLayout>
-
-                                <TextView
-                                    android:id="@+id/textLoucas"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="Louças\n"
-                                    android:textColor="@color/white"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
-        </ScrollView>
-
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

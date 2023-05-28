@@ -43,28 +43,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="360dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardFormaReciclagem"
                     android:layout_width="match_parent"
-                    android:layout_height="340dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="340dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/formaReciclagemTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="FORMA DE RECICLAGEM"
@@ -75,15 +75,12 @@
                         <TextView
                             android:id="@+id/refFormaReciclagem"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="4"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="Alguns saquinhos de chá são compostáveis, o que significa que podem ser colocados no composto juntamente com outros resíduos orgânicos. No entanto, muitos saquinhos de chá contêm plástico e não são compostáveis, devendo ser descartados no lixo comum."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -93,28 +90,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardDestino"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/destinoTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="DESTINO"
@@ -125,15 +122,12 @@
                         <TextView
                             android:id="@+id/refDestino"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="4"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="Os saquinhos de chá compostáveis podem ser usados para produzir adubo, enquanto os não compostáveis devem ser descartados no lixo comum."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>

@@ -29,19 +29,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="2000dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLogo"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -49,27 +49,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/logoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="LOGO DO APLICATIVO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/logoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="LOGO DO APLICATIVO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refLogo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Reuso ícones criados por\nHilmy Abiyyu A. - Flaticon"
@@ -83,13 +91,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardImagensTelas"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -97,27 +105,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/imageImagensTelas"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="IMAGENS DAS TELAS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/imageImagensTelas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="IMAGENS DAS TELAS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refImagensTelas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="People illustrations\nby Storyset"
@@ -131,13 +147,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLixoToxico"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -145,27 +161,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/imageLixoToxico"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="LIXO TÓXICO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/imageLixoToxico"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="LIXO TÓXICO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refLixoToxico"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Lixo biomédico ícones criados\npor Muhammad_Usman\n- Flaticon"
@@ -179,13 +203,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLata"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -193,27 +217,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="140dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/lataTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="LATA"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/lataTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="LATA"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refLata"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Lata de cerveja ícones criados\npor Freepik - Flaticon"
@@ -227,13 +259,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardClipeGrampo"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -241,27 +273,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/grampoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="CLIPE/GRAMPO  "
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/grampoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="CLIPE/GRAMPO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refGrampo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Clipe de papel ícones criados\npor Freepik - Flaticon"
@@ -275,14 +315,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardRecipienteAluminioSemResiduo"
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -290,27 +330,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/recipienteAluminioSemResiduoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="RECIPIENTE DE ALUMÍNIO\nSEM RESÍDUO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/recipienteAluminioSemResiduoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="RECIPIENTE DE ALUMÍNIO\nSEM RESÍDUO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refRecipienteAluminioSemResiduo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Frustrar ícones criados\npor Freepik - Flaticon"
@@ -324,13 +372,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardGarrafasPlastico"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -338,27 +386,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/garrafasPlasticoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="GARRAFAS DE PLÁSTICO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/garrafasPlasticoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="GARRAFAS DE PLÁSTICO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refGarrafasPlastico"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Plastico ícones criados\npor monkik - Flaticon"
@@ -372,13 +428,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardIsopor"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -386,27 +442,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/isoporTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="ISOPOR"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/isoporTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="ISOPOR"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refIsopor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Isopor ícones criados\npor andinur - Flaticon"
@@ -420,13 +484,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardEmbalagens"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -434,27 +498,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/embalagensTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="EMBALAGENS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/embalagensTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="EMBALAGENS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refEmbalagens"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Salgadinhos ícones criados\npor Freepik - Flaticon"
@@ -468,13 +540,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardCaneta"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -482,27 +554,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/canetaTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="CANETA"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/canetaTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="CANETA"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refCaneta"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Lápis ícones criados\npor Good Ware - Flaticon"
@@ -516,13 +596,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardGarrafasVidro"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -530,27 +610,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/garrafasVidroTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="GARRAFAS DE VIDRO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/garrafasVidroTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="GARRAFAS DE VIDRO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refGarrafasVidro"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Garrafa ícones criados\npor Freepik - Flaticon"
@@ -564,13 +652,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardAdesivo"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -578,27 +666,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/adesivoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="ADESIVO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/adesivoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="ADESIVO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refAdesivo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Adesivo ícones criados\npor Good Ware - Flaticon"
@@ -612,13 +708,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardPapelHigienico"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -626,27 +722,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/papelHigienicoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="PAPEL HIGIÊNICO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/papelHigienicoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="PAPEL HIGIÊNICO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refPapelHigienico"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Papel higiênico ícones criados\npor Nikita Golubev - Flaticon"
@@ -660,13 +764,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardEmbalagensResiduos"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -674,27 +778,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/embalagensResiduosTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="EMBALAGENS COM RESÍDUOS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/embalagensResiduosTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="EMBALAGENS COM RESÍDUOS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refEmbalagensResiduos"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Sobra ícones criados\npor Freepik - Flaticon"
@@ -708,13 +820,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardGuardanaposUsados"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -722,27 +834,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/guardanaposUsadosTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="GUARDANAPOS USADOS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/guardanaposUsadosTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="GUARDANAPOS USADOS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refGuardanaposUsados"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Papel higiênico ícones criados\npor Icon home - Flaticon"
@@ -756,13 +876,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardEspelho"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -770,27 +890,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/espelhoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="ESPELHO E AMPOLAS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/espelhoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="ESPELHO E AMPOLAS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refEspelho"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Espelho ícones criados\npor Freepik - Flaticon"
@@ -804,13 +932,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardAcrilico"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -818,27 +946,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/acrilicoTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="ACRÍLICO"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/acrilicoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="ACRÍLICO"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refAcrilico"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Janela ícones criados\npor phatplus - Flaticon"
@@ -852,13 +988,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLoucas"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -866,27 +1002,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/loucasTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="LOUÇAS"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/loucasTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="LOUÇAS"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refLoucas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Louça ícones criados\npor kosonicon - Flaticon"
@@ -900,13 +1044,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardResiduosAlimentares"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -914,27 +1058,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/residuosAlimentaresTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="RESÍDUOS ALIMENTARES"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/residuosAlimentaresTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="RESÍDUOS ALIMENTARES"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refResiduosAlimentares"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Maçã mordida ícones criados\npor Freepik - Flaticon"
@@ -948,13 +1100,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardResiduosJardinagem"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -962,27 +1114,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/residuosJardinagemTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="RESÍDUOS DE JARDINAGEM"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/residuosJardinagemTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="RESÍDUOS DE JARDINAGEM"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refResiduosJardinagem"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Areia ícones criados\npor Freepik - Flaticon"
@@ -996,13 +1156,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardPoCafeCoador"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1010,27 +1170,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/poCafeCoadorTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="PÓ DE CAFÉ E COADOR"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/poCafeCoadorTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="PÓ DE CAFÉ E COADOR"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refPoCafeCoador"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Cafeteria ícones criados\npor Freepik - Flaticon"
@@ -1044,13 +1212,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardSaquinhosCha"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1058,27 +1226,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/saquinhosChaTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="SAQUINHOS DE CHÁ"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/saquinhosChaTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="SAQUINHOS DE CHÁ"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refSaquinhosCha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Xícara de chá ícones criados\npor Freepik - Flaticon"
@@ -1092,13 +1268,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardJornal"
                     android:layout_width="match_parent"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1106,27 +1282,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="135dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/jornalTitle"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
-                            android:gravity="center"
-                            android:text="JORNAL"
-                            android:textColor="@color/white"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/jornalTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:gravity="center"
+                                android:text="JORNAL"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/refJornal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:layout_marginHorizontal="20dp"
                             android:background="@color/white"
                             android:gravity="center"
                             android:text="Jornal ícones criados\npor Freepik - Flaticon"
@@ -1140,13 +1324,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLixoToxicoText1"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1154,7 +1338,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1162,7 +1346,7 @@
                             android:id="@+id/textLixoToxico1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="1. LIXO TÓXICO"
@@ -1176,13 +1360,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardLixoToxicoText2"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1190,7 +1374,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1198,7 +1382,7 @@
                             android:id="@+id/textLixoToxico2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="2. LIXO TÓXICO"
@@ -1212,13 +1396,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem1"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1226,7 +1410,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1234,7 +1418,7 @@
                             android:id="@+id/textReciclagem1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="1. TEXTO DE RECICLAGEM"
@@ -1248,13 +1432,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem2"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1262,7 +1446,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1270,7 +1454,7 @@
                             android:id="@+id/textReciclagem2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="2. TEXTO DE RECICLAGEM"
@@ -1284,13 +1468,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem3"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1298,7 +1482,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1306,7 +1490,7 @@
                             android:id="@+id/textReciclagem3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="3. TEXTO DE RECICLAGEM"
@@ -1320,13 +1504,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem4"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1334,7 +1518,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1342,7 +1526,7 @@
                             android:id="@+id/textReciclagem4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="4. TEXTO DE RECICLAGEM"
@@ -1356,13 +1540,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem5"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1370,7 +1554,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1378,7 +1562,7 @@
                             android:id="@+id/textReciclagem5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="5. TEXTO DE RECICLAGEM"
@@ -1392,14 +1576,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardReciclagem6"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
                     android:backgroundTint="@color/white"
@@ -1407,7 +1591,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1415,7 +1599,7 @@
                             android:id="@+id/textReciclagem6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="6. TEXTO DE RECICLAGEM"

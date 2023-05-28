@@ -35,35 +35,35 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/jardinagem" />
 
             <LinearLayout
                 android:id="@+id/linearLayoutFormasReciclagem"
                 android:layout_width="match_parent"
-                android:layout_height="260dp"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardFormaReciclagem"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="240dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/formaReciclagemTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="FORMAS DE RECICLAGEM"
@@ -74,15 +74,12 @@
                         <TextView
                             android:id="@+id/refFormaReciclagem"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="2.5"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="Os resíduos de jardinagem, como galhos e folhas, podem ser triturados e transformados em adubo ou em combustível para biomassa."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -93,29 +90,29 @@
             <LinearLayout
                 android:id="@+id/linearLayoutTransformacao"
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardTransformacao"
                     android:layout_width="match_parent"
-                    android:layout_height="260dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="25dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="260dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/transformacaoTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
                             android:background="@color/dark_blue"
                             android:gravity="center"
                             android:text="TRANSFORMAÇÃO"
@@ -126,15 +123,12 @@
                         <TextView
                             android:id="@+id/refTransformacao"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
-                            android:layout_marginVertical="10dp"
-                            android:layout_weight="2"
+                            android:layout_marginVertical="20dp"
                             android:background="@color/white"
-                            android:gravity="center"
                             android:justificationMode="inter_word"
                             android:text="O adubo produzido pode ser usado para fertilizar plantas e jardins, enquanto o combustível de biomassa pode ser usado para produzir energia."
-                            android:textAlignment="viewStart"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
