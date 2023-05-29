@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ScrollView;
 
 public class Organico extends AppCompatActivity {
 
@@ -29,6 +30,9 @@ public class Organico extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbarOrganico);
         ToolbarUtil.setupToolbar(this, toolbar);
+
+        ScrollView scrollView = findViewById(R.id.scrollViewOrganico);
+        scrollView.setScrollBarSize(25);
 
         for (int i = 0; i < cardIds.length; i++) {
             cards[i] = findViewById(cardIds[i]);
@@ -57,7 +61,7 @@ public class Organico extends AppCompatActivity {
                     intent = new Intent(v.getContext(), Jornal.class);
                     break;
                 default:
-                    intent = new Intent(v.getContext(), TelaInformativa.class);
+                    intent = new Intent(v.getContext(), Organico.class);
             }
             v.getContext().startActivity(intent);
         }

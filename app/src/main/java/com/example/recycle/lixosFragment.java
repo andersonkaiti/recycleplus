@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ScrollView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,6 +63,9 @@ public class lixosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_lixos, container, false);
+
+        ScrollView scrollView = view.findViewById(R.id.scrollViewLixos);
+        scrollView.setScrollBarSize(25);
         CardView cardReciclaveis = view.findViewById(R.id.cardReciclaveis);
         CardView cardComum = view.findViewById(R.id.cardComum);
         CardView cardOrganico = view.findViewById(R.id.cardOrganico);

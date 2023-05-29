@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,6 +64,9 @@ public class creditosFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_creditos, container, false);
         Button btnReferencias = view.findViewById(R.id.btnReferencias);
+
+        ScrollView scrollView = view.findViewById(R.id.scrollViewCreditos);
+        scrollView.setScrollBarSize(25);
 
         btnReferencias.setOnClickListener(new View.OnClickListener() {
             @Override

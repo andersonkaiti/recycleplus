@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ScrollView;
 
 import java.util.Arrays;
 
@@ -36,6 +37,8 @@ public class Reciclavel extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbarReciclavel);
         ToolbarUtil.setupToolbar(this, toolbar);
 
+        ScrollView scrollView = findViewById(R.id.scrollViewReciclavel);
+        scrollView.setScrollBarSize(25);
 
         for (int i = 0; i < cardIds.length; i++) {
             cards[i] = findViewById(cardIds[i]);
@@ -73,7 +76,7 @@ public class Reciclavel extends AppCompatActivity {
                     intent = new Intent(v.getContext(), Vidro.class);
                     break;
                 default:
-                    intent = new Intent(v.getContext(), TelaInformativa.class);
+                    intent = new Intent(v.getContext(), Reciclavel.class);
             }
             v.getContext().startActivity(intent);
         }

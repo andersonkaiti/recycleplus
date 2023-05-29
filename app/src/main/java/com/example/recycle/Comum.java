@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ScrollView;
 
 public class Comum extends AppCompatActivity {
 
@@ -30,6 +31,9 @@ public class Comum extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbarComumRejeito);
         ToolbarUtil.setupToolbar(this, toolbar);
+
+        ScrollView scrollView = findViewById(R.id.scrollViewComumRejeito);
+        scrollView.setScrollBarSize(25);
 
         for (int i = 0; i < cardIds.length; i++) {
             cards[i] = findViewById(cardIds[i]);
@@ -64,7 +68,7 @@ public class Comum extends AppCompatActivity {
                     intent = new Intent(v.getContext(), Louca.class);
                     break;
                 default:
-                    intent = new Intent(v.getContext(), TelaInformativa.class);
+                    intent = new Intent(v.getContext(), Comum.class);
             }
             v.getContext().startActivity(intent);
         }

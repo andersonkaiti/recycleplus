@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 
 public class Toxico extends AppCompatActivity {
 
@@ -15,17 +16,9 @@ public class Toxico extends AppCompatActivity {
         setContentView(R.layout.activity_toxico);
 
         Toolbar toolbar = findViewById(R.id.toolbarToxico);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-    }
+        ToolbarUtil.setupToolbar(this, toolbar);
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-            onBackPressed();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        ScrollView scrollView = findViewById(R.id.scrollViewToxico);
+        scrollView.setScrollBarSize(25);
     }
 }

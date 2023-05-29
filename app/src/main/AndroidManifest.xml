@@ -60,10 +60,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TelaInformativa"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Vidro"
             android:exported="false"
             android:screenOrientation="portrait" />
