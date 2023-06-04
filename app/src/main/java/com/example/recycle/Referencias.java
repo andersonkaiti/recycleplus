@@ -22,6 +22,7 @@ public class Referencias extends AppCompatActivity {
         ToolbarUtil.setupToolbar(this, toolbar);
 
         int[] cardIds = {
+                R.id.cardREGER,
                 R.id.cardLogo,
                 R.id.cardImagensTelas,
                 R.id.cardLixoToxico,
@@ -56,6 +57,9 @@ public class Referencias extends AppCompatActivity {
         };
 
         String[] urls = {
+                // Projeto REGER
+                "https://unisagrado.edu.br/projetos/reger-reducao-na-geracao-de-residuos",
+
                 // https://www.flaticon.com/br/icone-gratis/sinal-de-reciclagem_4511039?term=reciclagem&page=2&position=5&origin=search&related_id=4511039
                 "https://www.flaticon.com/br/icones-gratis/reuso",
 
