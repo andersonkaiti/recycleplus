@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.recycle'
+    namespace 'com.recycleplus.projetorecycleplus'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.recycle"
+        applicationId "com.recycleplus.projetorecycleplus"
         minSdk 24
         targetSdk 33
         versionCode 1
